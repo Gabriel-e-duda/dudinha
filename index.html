@@ -110,16 +110,16 @@
 
     }
 
-    /* Estilo para as florzinhas */
     .flower {
-        position: absolute;
-        width: 40px; /* Tamanho da florzinha */
-        height: 40px; /* Tamanho da florzinha */
-        background-image: url(flor.png); /* Coloque o caminho da sua imagem de florzinha */
-        background-size: cover;
-        animation: float 10s infinite;
-        z-index: 0; /* Coloca as florzinhas atrás de tudo */
-    }
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-image: url(flor.png); /* Verifique se o caminho da flor está correto */
+    background-size: cover;
+    animation: float 10s infinite;
+    z-index: 0; /* Coloca as florzinhas atrás de tudo */
+    pointer-events: none; /* Impede que as flores interfiram na interação com outros elementos */
+}
 
     /* Animação para as florzinhas se moverem suavemente */
     @keyframes float {
